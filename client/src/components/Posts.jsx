@@ -1,42 +1,9 @@
 import React from 'react'
-import { Company, Dots, Location, Share, Time, Views, article1, article2, article3, user1, user2, user3 } from '../assets/img'
+import { Company, Dots, Location, Pencil, Share, Time, Views, article1, article2, article3, i, user1, user2, user3 } from '../assets/img'
 
 const Posts = () => {
-  const posts = [
-    {
-      type: '✍️ Article',
-      title: 'What if famous brands had regular fonts? Meet RegulaBrands!',
-      description: "I’ve worked in UX for the better part of a decade. From now on, I plan to reimagine...",
-      views: '1.4k',
-    },
-    {
-      type: '🔬️ Education',
-      title: 'Tax Benefits for Investment under National Pension Scheme launched by Government',
-      description: "I’ve worked in UX for the better part of a decade. From now on, I plan to reimagine...",
-      views: '1.4k',
-    },
-    {
-      type: '🗓️ Meetup',
-      title: 'Finance & Investment Elite Social Mixer @Lujiazui',
-      description: '',
-      views: '1.4k',
-      date: 'Fri, 12 Oct, 2018',
-      location: 'Ahmedabad, India',
-      linkText: 'Visit Website',
-      linkUrl: '#',
-    },
-    {
-      type: '💼️ Job',
-      title: 'Software Developer',
-      description: '',
-      views: '1.4k',
-      location: 'Innovaccer Analytics Private Ltd., Noida, India',
-      linkText: 'Apply on Timesjobs',
-      linkUrl: '#',
-    },
-  ];
   return (
-    <div className='flex flex-row w-full'>
+    <div className='flex flex-row w-full mb-3'>
       {/* this is the section for articles and any other posts */}
       {/* this is card container */}
       <div className='w-[72%] flex flex-col gap-2'>
@@ -148,48 +115,60 @@ const Posts = () => {
           {/* description section */}
           <div className='m-4'>
             <p className='w-[77px] h-[25px] font-sans font-[500] text-[18px]  mb-1'>💼️ Job</p>
-          </div>
-          {/* title */}
-          <div className='flex flex-row justify-between'>
 
-            <p className='w-[600px] h-[50px] font-sans font-bold leading-[29.52px] text-[22px]'>Software Developer</p>
-            <img src={Dots} className='size-[28px]' alt="" />
-          </div>
-          {/* company and location */}
-          <div className='flex flex-row gap-[4.5rem]'>
-            <div className='flex flex-row items-center gap-2 text-[15px] text-[#000000] font-bold'>
-              <img src={Company} className='size-[20px]' alt="" />
-              <p>Innovaccer Analytics Private Ltd.</p>
+            {/* title */}
+            <div className='flex flex-row justify-between'>
+
+              <p className='w-[600px] h-[50px] font-sans font-bold leading-[29.52px] text-[22px]'>Software Developer</p>
+              <img src={Dots} className='size-[28px]' alt="" />
             </div>
-            <div className='flex flex-row items-center gap-2 text-[15px] text-[#000000] font-bold'>
-              <img src={Location} className='w-[11.67px] h-[16.67]' alt="" />
-              <p>Noida, India</p>
-            </div>
-          </div>
-          <button className='w-full rounded-lg border-[0.7px] border-solid border-[#A9AEB8] text-[#E56135] bg-[#FFFFFF] h-[38px] my-3'>
-            Visit Website
-          </button>
-          {/* user views and share */}
-          <div className='flex items-center flex-row justify-between mt-[10px]'>
-            <div className='flex items-center gap-2'>
-              <img src={user3} className='size-[48px] rounded-3xl' alt="" />
-              <p className='font-sans text-[18px] font-bold'>Ronal Jones</p>
-            </div>
-            <div className='flex items-center gap-[42px]'>
-              <div className='flex flex-row gap-2'>
-                <img src={Views} alt="" />
-                <p>1.4k views</p>
+            {/* company and location */}
+            <div className='flex flex-row gap-[4.5rem]'>
+              <div className='flex flex-row items-center gap-2 text-[15px] text-[#000000] font-bold'>
+                <img src={Company} className='size-[20px]' alt="" />
+                <p>Innovaccer Analytics Private Ltd.</p>
               </div>
-              <button className='w-[42px] h-[36px] flex items-center justify-center bg-[#EDEEF0]'>
-                <img className='w-[13.5px] h-[14.9px]' src={Share} alt="" />
-              </button>
+              <div className='flex flex-row items-center gap-2 text-[15px] text-[#000000] font-bold'>
+                <img src={Location} className='w-[11.67px] h-[16.67]' alt="" />
+                <p>Noida, India</p>
+              </div>
+            </div>
+            <button className='w-full rounded-lg border-[0.7px] border-solid border-[#A9AEB8] text-[#02B875] bg-[#FFFFFF] h-[38px] my-3'>
+              Apply on Timesjobs
+            </button>
+            {/* user views and share */}
+            <div className='flex items-center flex-row justify-between mt-[10px]'>
+              <div className='flex items-center gap-2'>
+                <img src={user3} className='size-[48px] rounded-3xl' alt="" />
+                <p className='font-sans text-[18px] font-bold'>Ronal Jones</p>
+              </div>
+              <div className='flex items-center gap-[42px]'>
+                <div className='flex flex-row gap-2'>
+                  <img src={Views} alt="" />
+                  <p>1.4k views</p>
+                </div>
+                <button className='w-[42px] h-[36px] flex items-center justify-center bg-[#EDEEF0]'>
+                  <img className='w-[13.5px] h-[14.9px]' src={Share} alt="" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       {/* This is the section for location */}
-      <div>
-        Details
+      <div className='w-[28%]'>
+        <div className='flex  w-full mt-[30px] flex-col gap-[20px]'>
+
+          <div className='flex gap-[5px] text-[14px] font-[500] items-center justify-between w-full border-b-2 pb-[10px]'>
+            <div className='flex flex-row gap-[5px] items-center'>
+
+              <img src={Location} className='w-[11.67px] h-[16.67px]' alt="" />
+              <p>Noida, India</p>
+            </div>
+            <img src={Pencil} alt="" />
+          </div>
+          <img src={i} alt="" />
+        </div>
       </div>
     </div>
   )

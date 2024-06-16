@@ -37,7 +37,7 @@ const MainContent = () => {
     'Job',
   ];
   return (
-    <div className='max-w-[1040px] ml-auto mr-auto border border-red-500 mt-7'>
+    <div className='max-w-[1040px] ml-auto mr-auto  mt-7'>
       <div className='w-full my-7 flex justify-between items-center flex-row border-b-[2px] border-b-[#E0E0E0] pb-3'>
         <div className='flex gap-6'>
           {links.map((link, index) => (

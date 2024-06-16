@@ -22,5 +22,7 @@ export { default as Time } from "./time.png";
 export { default as Location } from "./location.png";
 export { default as Company } from "./company.png";
 
+export { default as Pencil } from "./pencil.png";
+export { default as i } from "./i.png";
 
 
