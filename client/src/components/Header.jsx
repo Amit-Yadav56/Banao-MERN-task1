@@ -1,5 +1,5 @@
 import React from 'react'
-import { Logo, MobileHeaderImage, Search, down, vec } from "../assets/img/index";
+import { Logo, Search, down, vec, MobileHeaderImage } from "../assets/img/index";
 import { NavLink, useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion'
 import { useState } from 'react';
@@ -7,10 +7,16 @@ import { info } from '../assets/img';
 import SignUp from './SiginUp';
 import SignIn from './SignIn';
 
-const Header = ({ setOpen }) => {
+const Header = () => {
+    const navigate = useNavigate()
+
+
+    const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
     return (
-        <>
-            {/* Mobile Header */}
+        <div>
+            <SignUp setOpen={setOpen} open={open} setOpen2={setOpen2}></SignUp>
+            <SignIn open2={open2} setOpen2={setOpen2} setOpen={setOpen}></SignIn>
             <header className="block sm:hidden">
                 <img src={MobileHeaderImage} alt="Mobile Header" className="w-full" />
             </header>
@@ -39,8 +45,8 @@ const Header = ({ setOpen }) => {
                     </div>
                 </button>
             </header>
-        </>
-    );
-};
+        </div>
+    )
+}
 
 export default Header

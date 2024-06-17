@@ -10,7 +10,7 @@ const SignUp = ({ setOpen, open, setOpen2 }) => {
       <div className="fixed inset-0 flex items-center justify-center z-50">
         {/*This is the main container */}
         <div className="relative bg-white rounded-lg w-[736px] h-[513px]">
-          <button onClick={() => setOpen2(false)} className="absolute top-[-3rem] right-[-1rem] text-gray-700  ">
+          <button onClick={() => setOpen(false)} className="absolute top-[-3rem] right-[-1rem] text-gray-700  ">
             <img src={Cross} alt="" />
           </button>
           <p className="text-center text-green-600 bg-green-100 py-4 rounded-md  text-[14px] font-[500]">
