@@ -24,5 +24,10 @@ export { default as Company } from "./company.png";
 
 export { default as Pencil } from "./pencil.png";
 export { default as i } from "./i.png";
+export { default as vec } from "./vec.png";
+export { default as signinbanner } from "./signinbanner.png";
+export { default as Cross } from "./cross.png";
+export { default as fb } from "./fb.png";
+export { default as Google } from "./google.png";
 
 
