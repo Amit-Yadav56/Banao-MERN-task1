@@ -29,5 +29,6 @@ export { default as signinbanner } from "./signinbanner.png";
 export { default as Cross } from "./cross.png";
 export { default as fb } from "./fb.png";
 export { default as Google } from "./google.png";
+export { default as MobileHeaderImage } from "./mobile-header.png";
 
 
