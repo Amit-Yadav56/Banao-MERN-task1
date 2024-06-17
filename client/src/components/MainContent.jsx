@@ -51,8 +51,8 @@ const MainContent = () => {
           ))}
         </div>
         <div className='flex gap-6 font-sans'>
-          <button className='w-[133px] h-[36px] border-2 rounded-md bg-[#EDEEF0] font-sans font-[700] flex justify-center items-center gap-[2px] pl-2 '>Write a post <img src={down} alt="" /></button>
-          <button className='w-[140px] h-[36px] border-2 rounded-md bg-[#2F6CE5] font-sans flex justify-center items-center gap-[5px] font-[600] text-white '  ><img src={join} alt="" />Leave Group</button>
+          <button className='w-[133px] h-[36px]  rounded-md bg-[#EDEEF0] font-sans font-[700] flex justify-center items-center gap-[2px] pl-2 '>Write a post <img src={down} alt="" /></button>
+          <button className='w-[140px] h-[36px]  rounded-md bg-[#2F6CE5] font-sans flex justify-center items-center gap-[5px] font-[600] text-white '  ><img src={join} alt="" />Leave Group</button>
 
         </div>
       </div>

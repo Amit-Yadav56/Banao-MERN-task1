@@ -6,7 +6,7 @@ const Posts = () => {
     <div className='flex flex-row w-full mb-3'>
       {/* this is the section for articles and any other posts */}
       {/* this is card container */}
-      <div className='w-[72%] flex flex-col gap-2'>
+      <div className='w-[76%] flex flex-col gap-2'>
         {/* thsese are induvidual cards */}
         <div className='w-[692px] h-[472px]  border-[2px] border-solid border-[#E0E0E0] rounded flex flex-col'>
           <img src={article1} alt="" className='h-[220px] object-cover' />
@@ -156,7 +156,7 @@ const Posts = () => {
         </div>
       </div>
       {/* This is the section for location */}
-      <div className='w-[28%]'>
+      <div className='w-[24%]'>
         <div className='flex  w-full mt-[30px] flex-col gap-[20px]'>
 
           <div className='flex gap-[5px] text-[14px] font-[500] items-center justify-between w-full border-b-2 pb-[10px]'>
@@ -167,7 +167,12 @@ const Posts = () => {
             </div>
             <img src={Pencil} alt="" />
           </div>
-          <img src={i} alt="" />
+
+          <div className='flex flex-row justify-center gap-[7px]'>
+
+            <img src={i} className='size-[16px]' alt="" />
+            <p className='w-full text-[12px] font-sans leading-[15.6px] opacity-[50%]'>Your location will help us serve better and extend a personalised experience.</p>
+          </div>
         </div>
       </div>
     </div>
